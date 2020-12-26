@@ -21,8 +21,7 @@ import java.util.Queue;
  * 인쇄 작업의 중요도는 1~9로 표현하며 숫자가 클수록 중요하다는 뜻입니다.
  * location은 0 이상 (현재 대기목록에 있는 작업 수 - 1) 이하의 값을 가지며 대기목록의 가장 앞에 있으면 0, 두 번째에 있으면 1로 표현합니다.
  *
- * 30분 소요
- */
+ * 30분 소요 */
 public class Printer {
     public int solution(int[] priorities, int location) {
         Queue<PrintMaterial> materials = new LinkedList<>();
