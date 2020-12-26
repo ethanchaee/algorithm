@@ -1,4 +1,4 @@
-package com.ethanchae.main;
+package com.ethanchae.exhaustivesearch;
 
 
 import java.util.HashSet;

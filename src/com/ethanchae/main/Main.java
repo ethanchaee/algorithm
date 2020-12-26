@@ -1,6 +1,6 @@
 package com.ethanchae.main;
 
-import sun.lwawt.macosx.CSystemTray;
+import com.ethanchae.exhaustivesearch.FindPrimeNumber;
 
 public class Main {
 
