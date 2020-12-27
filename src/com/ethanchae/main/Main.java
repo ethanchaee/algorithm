@@ -1,21 +1,19 @@
 package com.ethanchae.main;
 
 import com.ethanchae.exhaustivesearch.FindPrimeNumber;
+import com.ethanchae.hash.Camouflage;
+import com.ethanchae.stackqueue.DoublePriorityQueue;
 
 public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        FindPrimeNumber findPrimeNumber = new FindPrimeNumber();
-        int answer = findPrimeNumber.solution("017");
-        System.out.println(answer);
 
+//        DoublePriorityQueue doublePriorityQueue = new DoublePriorityQueue();
+//        doublePriorityQueue.solution(new String[]{"I -45", "I 653", "D 1", "I -642", "I 45", "I 97", "D 1", "D -1", "I 333"});
 
-//        Combination combination = new Combination();
-//        combination.withoutDuplication(new int[]{1,2,3,4,5}, 2);
-//
-//        System.out.println("premutation");
-//        Permutation permutation= new Permutation();
-//        permutation.calculate(new int[]{1,2,3,4,5}, 2);
+        //[[yellow_hat, headgear], [blue_sunglasses, eyewear], [green_turban, headgear]]
+        Camouflage camouflage = new Camouflage();
+        camouflage.solution(new String[][]{{"yellow_hat", "headgear"},{"blue_sunglasses", "eyewear"},{"green_turban", "headgear"}});
     }
 }
