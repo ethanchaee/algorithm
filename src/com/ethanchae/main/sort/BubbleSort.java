@@ -13,8 +13,9 @@ public class BubbleSort extends BaseSort {
 
     @Override
     public void sort() {
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length - i - 1; j++) {
+        int n = getLength();
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
                 // 비교연산 - 앞의 값이 뒤의 값 보다 크면 swap
                 if (arr[j] > arr[j + 1]) {
                     //데이터 swap
