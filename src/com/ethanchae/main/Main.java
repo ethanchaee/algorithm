@@ -1,19 +1,22 @@
 package com.ethanchae.main;
 
-import com.ethanchae.exhaustivesearch.FindPrimeNumber;
-import com.ethanchae.hash.Camouflage;
-import com.ethanchae.stackqueue.DoublePriorityQueue;
+
+import com.ethanchae.monthlychallenge.TriangleSnail;
+import sun.util.locale.LanguageTag;
+
+import java.math.BigDecimal;
+import java.text.NumberFormat;
+import java.util.Arrays;
+import java.util.Currency;
+import java.util.Locale;
+import java.util.*;
+import java.util.function.Function;
+import java.util.stream.DoubleStream;
+import java.util.stream.IntStream;
 
 public class Main {
 
-    public static void main(String[] args) {
-        // write your code here
-
-//        DoublePriorityQueue doublePriorityQueue = new DoublePriorityQueue();
-//        doublePriorityQueue.solution(new String[]{"I -45", "I 653", "D 1", "I -642", "I 45", "I 97", "D 1", "D -1", "I 333"});
-
-        //[[yellow_hat, headgear], [blue_sunglasses, eyewear], [green_turban, headgear]]
-        Camouflage camouflage = new Camouflage();
-        camouflage.solution(new String[][]{{"yellow_hat", "headgear"},{"blue_sunglasses", "eyewear"},{"green_turban", "headgear"}});
+    public static void main(String []argh){
+        int n = 3;
     }
 }
