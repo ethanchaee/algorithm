@@ -1,5 +1,7 @@
 package com.ethanchae.main.sort;
 
+import java.util.Stack;
+
 /**
  *
  */
@@ -8,7 +10,7 @@ public class InsertionSort extends BaseSort {
     @Override
     public void sort() {
         int n = getLength();
-
+        Stack<String> stack = new Stack();
         for (int i = 1; i < n; i++) {
             int temp = arr[i];
             int j = 0;

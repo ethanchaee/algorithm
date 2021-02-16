@@ -33,26 +33,19 @@ public class HeapSort extends BaseSort {
 
 
     //힙구조로 만듦
-    private void heap(int[] data, int number) {
-        //앞에부터 확인함
-        for (int i = 1; i < number; i++) {
-            int child = i;
-            //자식노드부터 확인함
-            while (child > 0) {
-                int parent = (child - 1) / 2;           //루트노드 위치
-                if (data[child] > data[parent]) {       //자식노드가, 부모노드보다 크면 값을 변경 (오름차순)
-                    swap(data, child, parent);
-                }
-                else if(child % 2 == 1) break;              //왼쪽 노드이고, 부모노드가 더 크다면, 더 이상 확인할 필요 없음
-                child = parent;
+    private void heap(int[] arr, int n) {
+        int first = n / 2 - 1;
+        for(int parent = first ; parent >= 0; parent--){
+            int left = parent * 2 + 1;
+            int right = left + 1;
+
+            if(right < n && arr[right] > arr[parent]){
+                swap(arr, right, parent);
+            }
+            if(arr[left] > arr[parent]){
+                swap(arr, left, parent);
             }
         }
-    }
-
-    private static void swap(int[] arr, int i, int j) {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
     }
 
     public static void main(String[] args) {
